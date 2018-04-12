@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body_content %}
+      <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+      <form action = "{{ url_for('login')}}" method = "post">
+         <p>Enter Name:</p>
+         <p><input type = "text" name = "nm" /></p>
+         <p>Enter Age:</p>
+         <p><input type = "text" name = "age" /></p>
+         <p><input type = "submit" onclick = "sayHello()" value = "submit" /></p>
+      </form>
+{% endblock %}

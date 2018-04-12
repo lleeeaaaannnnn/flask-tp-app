@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+
+{% block body_content %}
+<h1>Welcome {{ name }}, {{ age }}. You are logged in as {{ username }}</h1>
+<a href="{{ url_for('logout') }}">Click here to log out</a>
+{% endblock %}
